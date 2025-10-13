@@ -1,0 +1,65 @@
+/* .streamlit/style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #00a8ff;
+    --background-color: #0e1117;
+    --secondary-background-color: #1c2026;
+    --text-color: #fafafa;
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.stApp {
+    background-color: var(--background-color);
+}
+
+/* Sidebar Styling */
+.css-1d391kg {
+    background-color: var(--secondary-background-color);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Main Content Styling */
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* Button Styling */
+.stButton>button {
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+}
+
+.stButton>button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 168, 255, 0.4);
+}
+
+/* Prediction Result Box Styling */
+.stAlert {
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1em;
+}
+
+.stAlert.st-emotion-cache-q49361 {
+     background-color: rgba(46, 204, 113, 0.15); /* Success background */
+     border-left: 5px solid var(--success-color);
+}
+
+.stAlert.st-emotion-cache-ocq0c7 {
+    background-color: rgba(231, 76, 60, 0.15); /* Error background */
+    border-left: 5px solid var(--error-color);
+}
